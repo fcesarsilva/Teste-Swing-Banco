@@ -1,3 +1,4 @@
+package View;
 import java.awt.EventQueue;
 
 import javax.swing.JInternalFrame;
@@ -15,7 +16,7 @@ import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
 
-public class Janela1 extends JInternalFrame {
+public class TelaInicial extends JInternalFrame {
 	private JTextField textField;
 	private JTextField textField_1;
 	private JTextField textField_2;
@@ -31,7 +32,7 @@ public class Janela1 extends JInternalFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Janela1 frame = new Janela1();
+					TelaInicial frame = new TelaInicial();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -43,7 +44,7 @@ public class Janela1 extends JInternalFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Janela1() {
+	public TelaInicial() {
 		setBounds(100, 100, 538, 410);
 		
 		JPanel PainelDeBotoes = new JPanel();
