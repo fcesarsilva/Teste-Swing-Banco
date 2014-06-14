@@ -1,4 +1,4 @@
-package View;
+package br.unipe.cc.mlpIII.gui;
 import java.awt.EventQueue;
 
 import javax.swing.JInternalFrame;

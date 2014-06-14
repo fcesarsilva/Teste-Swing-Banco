@@ -1,4 +1,4 @@
-package View;
+package br.unipe.cc.mlpIII.gui;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
@@ -51,15 +51,15 @@ public class TelaDeLogin extends JFrame {
 		contentPane.setLayout(null);
 		
 		JLabel lblLogin = new JLabel("Login");
-		lblLogin.setBounds(104, 125, 46, 14);
+		lblLogin.setBounds(104, 111, 46, 14);
 		contentPane.add(lblLogin);
 		
 		JLabel lblSenha = new JLabel("Senha");
-		lblSenha.setBounds(104, 157, 46, 14);
+		lblSenha.setBounds(104, 136, 46, 14);
 		contentPane.add(lblSenha);
 		
 		textLogin = new JTextField();
-		textLogin.setBounds(180, 122, 86, 20);
+		textLogin.setBounds(180, 108, 86, 20);
 		contentPane.add(textLogin);
 		textLogin.setColumns(10);
 		
@@ -79,27 +79,27 @@ public class TelaDeLogin extends JFrame {
 		Painel.setBounds(0, 0, 434, 87);
 		contentPane.add(Painel);
 		
-		JLabel lblBancoUnido = new JLabel("Banco Unido");
-		lblBancoUnido.setFont(new Font("Tahoma", Font.PLAIN, 56));
+		JLabel lblBancoUnido = new JLabel("Sistema Banco do Brasil");
+		lblBancoUnido.setFont(new Font("Tahoma", Font.PLAIN, 40));
 		GroupLayout gl_Painel = new GroupLayout(Painel);
 		gl_Painel.setHorizontalGroup(
 			gl_Painel.createParallelGroup(Alignment.LEADING)
-				.addGroup(gl_Painel.createSequentialGroup()
-					.addGap(63)
-					.addComponent(lblBancoUnido)
-					.addContainerGap(62, Short.MAX_VALUE))
+				.addGroup(Alignment.TRAILING, gl_Painel.createSequentialGroup()
+					.addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+					.addComponent(lblBancoUnido, GroupLayout.PREFERRED_SIZE, 426, GroupLayout.PREFERRED_SIZE)
+					.addGap(99))
 		);
 		gl_Painel.setVerticalGroup(
 			gl_Painel.createParallelGroup(Alignment.LEADING)
 				.addGroup(gl_Painel.createSequentialGroup()
-					.addGap(9)
+					.addGap(13)
 					.addComponent(lblBancoUnido)
-					.addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+					.addContainerGap(13, Short.MAX_VALUE))
 		);
 		Painel.setLayout(gl_Painel);
 		
 		textSenha = new JPasswordField();
-		textSenha.setBounds(180, 154, 86, 20);
+		textSenha.setBounds(180, 136, 86, 20);
 		contentPane.add(textSenha);
 	}
 }
